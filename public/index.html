@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fireworks.css">
+</head>
+<body>
+    <header>
+        <h1>Memory Game</h1>
+    </header>
+
+    <br/>
+
+    <div id="timer">00:00</div>
+
+    <!-- Fireworks -->
+    <!-- <div class="pyro" style="z-index: 1;">
+        <div class="before"></div>
+        <div class="after"></div>
+    </div> -->
+
+    <div>
+        <div class="game-board">
+            <!-- Cards will be generated here -->
+        </div>
+        <br/>
+        <button id="resetBtn" class="button-27" onclick="ResetGame()" style="display: none;">Reset Game</button>
+    </div>
+
+    <br/>
+
+    <div id="startGameDiv">
+        <!-- <header>
+            <h1>Memory Game</h1>
+        </header> -->
+        
+        <h2>Select Board Size</h2>
+        <br/>
+        <button id="boardSizeBtn1" class="button-27" onclick="StartGame(4)">4X4</button>
+        <br/>
+        <button id="boardSizeBtn2" class="button-27" onclick="StartGame(6)">6X6</button>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
